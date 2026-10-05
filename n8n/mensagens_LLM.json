@@ -1,0 +1,152 @@
+[
+  {
+    "ok": true,
+    "to": "ana@email.com",
+    "subject": "Sugestão de investimento para o seu perfil - CDB Liquidez Diária",
+    "text_body": "Olá, Ana Silva,\n\nCom base no seu perfil conservador e no saldo disponível em sua conta, identificamos uma oportunidade que pode ser do seu interesse: o CDB Liquidez Diária.\n\nEste produto possui aplicação mínima de R$ 1.000,00 e uma rentabilidade estimada de 12,5% ao ano. É uma opção que permite o resgate a qualquer momento, alinhando-se à sua estratégia de preservação de capital.\n\nLembramos que rentabilidade passada não representa garantia de ganhos futuros e todo investimento apresenta riscos. Caso tenha interesse, o produto está disponível em nossa plataforma.\n\nAtenciosamente,\nEquipe de Investimentos",
+    "html_body": "<p>Olá, <strong>Ana Silva</strong>,</p><p>Com base no seu perfil conservador e no saldo disponível em sua conta, identificamos uma oportunidade que pode ser do seu interesse: o <strong>CDB Liquidez Diária</strong>.</p><ul><li><strong>Aplicação mínima:</strong> R$ 1.000,00</li><li><strong>Rentabilidade:</strong> 12,5% ao ano</li><li><strong>Liquidez:</strong> Diária</li></ul><p>Esta é uma opção que permite o resgate a qualquer momento, alinhando-se à sua estratégia de preservação de capital. Lembramos que rentabilidade passada não representa garantia de ganhos futuros e todo investimento apresenta riscos.</p><p>Caso tenha interesse, o produto já está disponível em nossa plataforma.</p><p>Atenciosamente,<br><strong>Equipe de Investimentos</strong></p>",
+    "meta": {
+      "nome": "Ana Silva",
+      "perfil": "Conservador",
+      "produto": "CDB Liquidez Diária",
+      "minimo": 1000,
+      "rentabilidade": "12.5%",
+      "motivo": "saldo_ok"
+    }
+  },
+  {
+    "ok": true,
+    "to": "bruno@email.com",
+    "subject": "Sugestão de investimento: CDB Prefixado",
+    "text_body": "Olá, Bruno Lima.\n\nIdentificamos uma oportunidade de investimento condizente com seu perfil moderado e saldo disponível.\n\nProduto: CDB Prefixado\nRentabilidade: 14,0% ao ano\nInvestimento mínimo: R$ 1.000,00\n\nLembramos que a rentabilidade citada é uma taxa indicativa e não representa garantia de ganhos futuros. Investimentos estão sujeitos a riscos e as condições dependem do prazo de vencimento do título. Verifique os detalhes e riscos do produto antes de investir.\n\nAtenciosamente,\nEquipe de Investimentos",
+    "html_body": "<p>Olá, <strong>Bruno Lima</strong>,</p><p>Identificamos uma oportunidade de investimento condizente com seu perfil moderado e saldo disponível.</p><ul><li><strong>Produto:</strong> CDB Prefixado</li><li><strong>Rentabilidade:</strong> 14,0% ao ano</li><li><strong>Investimento mínimo:</strong> R$ 1.000,00</li></ul><p>Lembramos que a rentabilidade citada é uma taxa indicativa e não representa garantia de ganhos futuros. Investimentos estão sujeitos a riscos e as condições dependem do prazo de vencimento do título. Verifique os detalhes e riscos do produto antes de investir.</p><p>Atenciosamente,<br><strong>Equipe de Investimentos</strong></p>",
+    "meta": {
+      "nome": "Bruno Lima",
+      "perfil": "Moderado",
+      "produto": "CDB Prefixado",
+      "minimo": 1000,
+      "rentabilidade": "14.0%",
+      "motivo": "saldo_ok"
+    }
+  },
+  {
+    "ok": true,
+    "to": "carla@email.com",
+    "subject": "Sugestão de Alocação: Fundo de Ações",
+    "text_body": "Olá, Carla Souza.\n\nIdentificamos que você possui um saldo disponível de R$ 28.900,00. Com base em seu perfil arrojado, sugerimos considerar o investimento em nosso Fundo de Ações, que possui aplicação mínima de R$ 10.000,00.\n\nÉ importante ressaltar que este produto possui rentabilidade variável, acompanhando as oscilações do mercado, e não oferece garantias de ganhos ou retornos futuros.\n\nEstamos à disposição para dúvidas.",
+    "html_body": "<p>Olá, <strong>Carla Souza</strong>.</p><p>Identificamos que você possui um saldo disponível de R$ 28.900,00. Com base em seu perfil arrojado, sugerimos considerar o investimento em nosso <strong>Fundo de Ações</strong>, que possui aplicação mínima de R$ 10.000,00.</p><p>É importante ressaltar que este produto possui <strong>rentabilidade variável</strong>, acompanhando as oscilações do mercado, e não oferece garantias de ganhos ou retornos futuros.</p><p>Estamos à disposição para dúvidas.</p>",
+    "meta": {
+      "nome": "Carla Souza",
+      "perfil": "Arrojado",
+      "produto": "Fundo de Ações",
+      "minimo": 10000,
+      "rentabilidade": "Variável",
+      "motivo": "saldo_ok"
+    }
+  },
+  {
+    "ok": true,
+    "to": "daniel@email.com",
+    "subject": "Sugestão de investimento: Tesouro Selic",
+    "text_body": "Olá, Daniel Oliveira.\n\nCom base no seu perfil conservador e saldo disponível de R$ 850,00, identificamos uma opção que pode ser adequada para você: o Tesouro Selic.\n\nEste produto possui aporte mínimo de R$ 500,00 e a rentabilidade atual de referência é de 13,0% ao ano. Vale lembrar que rentabilidades passadas não representam garantia de ganhos futuros.\n\nCaso tenha interesse em saber mais, estamos à disposição.\n\nAtenciosamente.",
+    "html_body": "<html><body><p>Olá, <strong>Daniel Oliveira</strong>,</p><p>Com base no seu perfil conservador e saldo disponível de R$ 850,00, identificamos uma opção que pode ser adequada para você: o <strong>Tesouro Selic</strong>.</p><ul><li><strong>Aporte mínimo:</strong> R$ 500,00</li><li><strong>Rentabilidade de referência:</strong> 13,0% ao ano</li></ul><p>Vale lembrar que rentabilidades passadas não representam garantia de ganhos futuros e que investimentos financeiros possuem riscos.</p><p>Caso tenha interesse em saber mais, estamos à disposição.</p><p>Atenciosamente.</p></body></html>",
+    "meta": {
+      "nome": "Daniel Oliveira",
+      "perfil": "Conservador",
+      "produto": "Tesouro Selic",
+      "minimo": 500,
+      "rentabilidade": "13.0%",
+      "motivo": "saldo_ok"
+    }
+  },
+  {
+    "ok": true,
+    "to": "elena@email.com",
+    "subject": "Sugestão de Investimento: Fundo de Ações",
+    "text_body": "Olá, Elena Rodrigues.\n\nCom base em seu perfil de investidora arrojada e seu saldo disponível, selecionamos o Fundo de Ações como uma opção para diversificar sua carteira.\n\nEste produto possui aplicação mínima de R$ 10.000,00 e rentabilidade variável, acompanhando as oscilações do mercado. É importante ressaltar que investimentos em ações envolvem riscos e não há garantia de retornos futuros.\n\nCaso tenha interesse em saber mais detalhes, estamos à disposição.\n\nAtenciosamente,\nEquipe de Investimentos",
+    "html_body": "<p>Olá, <strong>Elena Rodrigues</strong>.</p><p>Com base em seu perfil de investidora arrojada e seu saldo disponível, selecionamos o <strong>Fundo de Ações</strong> como uma opção para diversificar sua carteira.</p><p>Este produto possui aplicação mínima de R$ 10.000,00 e rentabilidade variável, acompanhando as oscilações do mercado. É importante ressaltar que investimentos em ações envolvem riscos e <strong>não há garantia de retornos futuros</strong>.</p><p>Caso tenha interesse em saber mais detalhes, estamos à disposição.</p><p>Atenciosamente,<br>Equipe de Investimentos</p>",
+    "meta": {
+      "nome": "Elena Rodrigues",
+      "perfil": "Arrojado",
+      "produto": "Fundo de Ações",
+      "minimo": 10000,
+      "rentabilidade": "Variável",
+      "motivo": "saldo_ok"
+    }
+  },
+  {
+    "ok": true,
+    "to": "felipe@email.com",
+    "subject": "Sugestão de Investimento - Fundo Multimercado",
+    "text_body": "Olá, Felipe Santos,\n\nCom base no seu perfil moderado e no saldo disponível em sua conta, gostaríamos de sugerir o Fundo Multimercado como uma opção para compor sua carteira.\n\nInformações do produto:\n- Aplicação mínima: R$ 5.000,00\n- Rentabilidade histórica: 16,0%\n\nLembramos que a rentabilidade passada não representa garantia de resultados futuros. Investimentos em fundos de investimento envolvem riscos e não contam com garantia do administrador, do gestor ou do Fundo Garantidor de Crédito.\n\nEstamos à disposição para tirar dúvidas.\n\nAtenciosamente,\nEquipe de Investimentos",
+    "html_body": "<p>Olá, <strong>Felipe Santos</strong>,</p><p>Com base no seu perfil moderado e no saldo disponível em sua conta, gostaríamos de sugerir o <strong>Fundo Multimercado</strong> como uma opção para compor sua carteira.</p><p><strong>Informações do produto:</strong><br>• Aplicação mínima: R$ 5.000,00<br>• Rentabilidade histórica: 16,0%</p><p><em>Aviso legal: A rentabilidade passada não representa garantia de resultados futuros. Investimentos em fundos de investimento envolvem riscos e não contam com garantia do administrador, do gestor ou do Fundo Garantidor de Crédito.</em></p><p>Estamos à disposição para tirar dúvidas.</p><p>Atenciosamente,<br>Equipe de Investimentos</p>",
+    "meta": {
+      "nome": "Felipe Santos",
+      "perfil": "Moderado",
+      "produto": "Fundo Multimercado",
+      "minimo": 5000,
+      "rentabilidade": "16.0%",
+      "motivo": "saldo_ok"
+    }
+  },
+  {
+    "ok": true,
+    "to": "gabriela@email.com",
+    "subject": "Sugestão de investimento para o seu perfil - Gabriela Costa",
+    "text_body": "Olá, Gabriela,\n\nCom base no seu perfil conservador e no saldo disponível em sua conta, identificamos uma opção que pode ser do seu interesse: o CDB Liquidez Diária.\n\nEste produto possui aplicação mínima de R$ 1.000,00 e apresenta uma rentabilidade de 12,5% ao ano. É importante destacar que as taxas mencionadas são brutas e podem variar conforme as condições de mercado, não representando garantia de rentabilidade futura.\n\nPara conferir todos os detalhes e condições, acesse o nosso aplicativo.\n\nAtenciosamente,\nEquipe de Investimentos",
+    "html_body": "<p>Olá, <strong>Gabriela</strong>,</p><p>Com base no seu perfil conservador e no saldo disponível em sua conta, identificamos uma opção que pode ser do seu interesse: o <strong>CDB Liquidez Diária</strong>.</p><p>Este produto possui aplicação mínima de <strong>R$ 1.000,00</strong> e apresenta uma rentabilidade de <strong>12,5% ao ano</strong>. É importante destacar que as taxas mencionadas são brutas e podem variar conforme as condições de mercado, não representando garantia de rentabilidade futura.</p><p>Para conferir todos os detalhes e condições, acesse o nosso aplicativo.</p><p>Atenciosamente,<br>Equipe de Investimentos</p>",
+    "meta": {
+      "nome": "Gabriela Costa",
+      "perfil": "Conservador",
+      "produto": "CDB Liquidez Diária",
+      "minimo": 1000,
+      "rentabilidade": "12.5%",
+      "motivo": "saldo_ok"
+    }
+  },
+  {
+    "ok": true,
+    "to": "henrique@email.com",
+    "subject": "Sugestão de investimento para seu perfil - Fundo Multimercado",
+    "text_body": "Olá, Henrique Alves,\n\nCom base em seu perfil de investidor moderado e saldo disponível de R$ 22.300,00, identificamos uma oportunidade que pode ser do seu interesse: o Fundo Multimercado.\n\nEste produto possui aplicação mínima de R$ 5.000,00 e apresentou uma rentabilidade histórica de 16,0% no último período. É importante ressaltar que rentabilidade passada não representa garantia de resultados futuros e que todo investimento envolve riscos.\n\nCaso deseje entender melhor como este fundo se encaixa em sua estratégia de diversificação, estou à disposição.\n\nAtenciosamente,\nEquipe de Investimentos",
+    "html_body": "<html><body><p>Olá, <strong>Henrique Alves</strong>,</p><p>Com base em seu perfil de investidor moderado e saldo disponível de R$ 22.300,00, identificamos uma oportunidade que pode ser do seu interesse: o <strong>Fundo Multimercado</strong>.</p><ul><li><strong>Aplicação mínima:</strong> R$ 5.000,00</li><li><strong>Rentabilidade histórica:</strong> 16,0%</li></ul><p>É importante ressaltar que rentabilidade passada não representa garantia de resultados futuros e que todo investimento envolve riscos.</p><p>Caso deseje entender melhor como este fundo se encaixa em sua estratégia de diversificação, estou à disposição.</p><p>Atenciosamente,<br>Equipe de Investimentos</p></body></html>",
+    "meta": {
+      "nome": "Henrique Alves",
+      "perfil": "Moderado",
+      "produto": "Fundo Multimercado",
+      "minimo": 5000,
+      "rentabilidade": "16.0%",
+      "motivo": "saldo_ok"
+    }
+  },
+  {
+    "ok": true,
+    "to": "isabela@email.com",
+    "subject": "Sugestão de investimento para seu perfil - Isabela Martins",
+    "text_body": "Olá, Isabela Martins.\n\nCom base no seu perfil conservador e no saldo disponível de R$ 500,00, identificamos uma oportunidade de alocação no Tesouro Selic. \n\nO aporte mínimo é de R$ 500,00 e a rentabilidade de referência atual é de 13,0% ao ano. Esta sugestão está alinhada à sua estratégia atual.\n\nLembramos que rentabilidade passada não representa garantia de resultados futuros e que todo investimento envolve riscos. Estamos à disposição para dúvidas.",
+    "html_body": "<html><body><p>Olá, <strong>Isabela Martins</strong>,</p><p>Com base no seu perfil conservador e no saldo disponível de R$ 500,00, identificamos uma oportunidade de alocação no <strong>Tesouro Selic</strong>.</p><ul><li>Aporte mínimo: R$ 500,00</li><li>Rentabilidade de referência: 13,0% a.a.</li></ul><p>Esta sugestão está alinhada à sua estratégia atual. Ressaltamos que a rentabilidade passada não representa garantia de resultados futuros e que investimentos financeiros estão sujeitos a riscos.</p><p>Atenciosamente,</p></body></html>",
+    "meta": {
+      "nome": "Isabela Martins",
+      "perfil": "Conservador",
+      "produto": "Tesouro Selic",
+      "minimo": 500,
+      "rentabilidade": "13.0%",
+      "motivo": "saldo_ok"
+    }
+  },
+  {
+    "ok": true,
+    "to": "joao@email.com",
+    "subject": "Sugestão de Investimento: Fundo de Ações",
+    "text_body": "Olá, João Pereira.\n\nIdentificamos que seu perfil é arrojado e que você possui um saldo disponível de R$ 15.000,00. Com base nisso, sugerimos o Fundo de Ações como uma opção para compor sua carteira.\n\nO aporte mínimo é de R$ 10.000,00. Vale ressaltar que a rentabilidade deste produto é variável, acompanhando as oscilações do mercado, e não há qualquer garantia de ganhos.\n\nEstamos à disposição para mais informações.\n\nAtenciosamente,\nEquipe de Investimentos",
+    "html_body": "<p>Olá, <strong>João Pereira</strong>,</p><p>Identificamos que seu perfil é arrojado e que você possui um saldo disponível de R$ 15.000,00. Com base nisso, sugerimos o <strong>Fundo de Ações</strong> como uma opção para compor sua carteira.</p><p>O aporte mínimo é de R$ 10.000,00. Vale ressaltar que a rentabilidade deste produto é variável, acompanhando as oscilações do mercado, e não há qualquer garantia de ganhos.</p><p>Estamos à disposição para mais informações.</p><p>Atenciosamente,<br><strong>Equipe de Investimentos</strong></p>",
+    "meta": {
+      "nome": "João Pereira",
+      "perfil": "Arrojado",
+      "produto": "Fundo de Ações",
+      "minimo": 10000,
+      "rentabilidade": "Variável",
+      "motivo": "saldo_ok"
+    }
+  }
+]
