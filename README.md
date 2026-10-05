@@ -83,7 +83,7 @@ Antes de começar, explore o repositório base que já contém a estrutura inici
 
 1. **Página de Clientes (`docs/index.html`):** Uma página HTML hospedada no GitHub Pages com uma lista de clientes fictícios contendo nome, email, saldo e perfil de investidor (Conservador, Moderado ou Arrojado). Disponível online [neste link](https://digitalinnovationone.github.io/dio-lab-assistente-investimentos-rpa-n8n).
 2. **Dados de Investimentos (`docs/data.csv`):** Um arquivo CSV também hospedado no GitHub Pages com opções de investimento organizadas por perfil. Disponível online [neste link](https://digitalinnovationone.github.io/dio-lab-assistente-investimentos-rpa-n8n/data.csv).
-3. **Script de RPA (`src/extrair_clientes.ipynb`):** Um notebook Python que acessa a página de clientes e extrai os dados da tabela usando BeautifulSoup.
+3. **Script de RPA (`rpa/extrair_clientes.ipynb`):** Um notebook Python que acessa a página de clientes e extrai os dados da tabela usando BeautifulSoup.
 
 > 🤖 **Por que o script é considerado RPA?** Ele faz exatamente o que um humano faria manualmente: abre uma página, lê os dados de uma tabela e os envia para outro sistema. A diferença é que o "robô" (código) executa isso automaticamente. Essa abordagem é útil quando não existe uma API disponível ou quando precisamos integrar sistemas legados.
 
@@ -91,7 +91,7 @@ Antes de começar, explore o repositório base que já contém a estrutura inici
 
 1. Faça um **fork** do repositório base para sua conta do GitHub
 2. Crie uma conta no [N8N Cloud](https://n8n.io/) ou instale localmente
-3. Abra o notebook `src/extrair_clientes.ipynb` no [Google Colab](https://colab.research.google.com/) e execute para entender o fluxo de extração
+3. Abra o notebook `rpa/extrair_clientes.ipynb` no [Google Colab](https://colab.research.google.com/) e execute para entender o fluxo de extração
 
 > 💡 **Atenção:** O script já extrai os dados, mas o envio ao N8N está comentado (`TODO`). Você vai configurar a URL do Webhook após criá-lo na próxima etapa.
 
@@ -141,14 +141,53 @@ Conecte o Agente de IA do N8N a um modelo como Gemini ou GPT para:
 ```
 📁 dio-lab-assistente-investimentos-rpa-n8n/
 ├── 📄 README.md
-├── 📁 src/
-│   └── 📄 extrair_clientes.ipynb   # ✅ Notebook Python (já implementado, falta só o TODO)
 ├── 📁 n8n/
-│   └── 📄 workflow.json            # 🎯 Seu desafio: exportar o workflow aqui
+│   ├── 📄 README.md                # 📘 Documentação do workflow e decisões técnicas da automação
+│   ├── 📄 workflow.json            # 🎯 Artefato esperado: exportação versionada e reproduzível do fluxo MVP
+│   └── 📄 *.json                   # 🧪 Exportações auxiliares (exemplos/variações de fluxo)
+├── 📁 rpa/
+│   └── 📄 extrair_clientes.ipynb   # ✅ Notebook Python (extração + envio para Webhook)
 └── 📁 docs/
     ├── 📄 index.html               # ✅ Página de clientes (já implementado)
     └── 📄 data.csv                 # ✅ Opções de investimento (já implementado)
 ```
+
+## Pasta `n8n`: finalidade e uso no desafio
+
+A pasta `n8n/` concentra os artefatos do workflow de orquestração entre a coleta em Python e a geração de recomendações. O artefato principal esperado para o desafio é o arquivo `n8n/workflow.json`, que representa uma exportação **versionada e reproduzível** do fluxo no n8n.
+
+### Fluxo esperado dos nós
+
+No MVP, o fluxo deve seguir esta sequência:
+
+1. **Webhook (entrada):** recebe `POST` com a lista de clientes enviada pelo notebook Python.
+2. **Leitura/consulta de investimentos:** busca `docs/data.csv` (via GitHub Pages) com as opções por perfil.
+3. **Cruzamento por perfil:** relaciona cada cliente (`Conservador`, `Moderado`, `Arrojado`) com a linha apropriada do CSV.
+4. **Geração da mensagem:** monta a recomendação (template estático no MVP, com possibilidade de evolução para IA).
+5. **Resposta/saída:** retorna os resultados para inspeção (response node, logs ou outro destino de saída definido no fluxo).
+
+### Importação no n8n e teste ponta a ponta
+
+1. No n8n, use **Import workflow** e selecione `n8n/workflow.json` (quando disponível no repositório).
+2. Copie a URL do nó **Webhook** e atualize a variável correspondente no notebook `rpa/extrair_clientes.ipynb` (ex.: `N8N_WEBHOOK`).
+3. Execute o notebook para extrair clientes e enviar o payload JSON para o n8n.
+4. Valide no n8n se o fluxo processou os dados, cruzou perfis corretamente e gerou uma mensagem para cada cliente.
+5. Revise o retorno final (HTTP response, console do n8n ou nó de saída configurado) para confirmar o funcionamento ponta a ponta.
+
+### Boas práticas de segurança para versionamento
+
+- Não versionar credenciais de produção, tokens de API ou chaves secretas.
+- Não versionar URLs privadas/sensíveis (por exemplo, webhooks temporários de túnel) sem sanitização.
+- Não usar dados pessoais reais de clientes; manter apenas dados fictícios/anônimos.
+- Revisar exportações do n8n antes do commit para remover campos sensíveis.
+
+### Decisões técnicas
+
+- **Webhook como contrato de entrada:** padroniza a integração entre coleta (Python/RPA) e orquestração (n8n), com payload JSON simples e desacoplado.
+- **CSV no GitHub Pages como fonte inicial:** fornece base transparente, pública e fácil de auditar para mapear perfil de investidor para sugestão de investimento.
+- **Separação de responsabilidades:** Python realiza coleta/normalização de dados, n8n orquestra regras de negócio e a camada de saída apresenta a recomendação.
+- **MVP com mensagens estáticas por perfil:** reduz complexidade inicial, acelera validação funcional e prepara terreno para evolução (substituição do nó por agente/LLM).
+- **Validação mínima e tratamento de erros:** o fluxo deve validar campos essenciais (`nome`, `email`, `saldo`, `perfil`) e tratar entradas ausentes/ inválidas; as recomendações são demonstrativas e não configuram consultoria financeira.
 
 ## Prompts Úteis para Copilotos de IA
 
